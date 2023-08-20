@@ -1,19 +1,28 @@
 name: "my-website"
-output_dir: "docs"
 navbar:
   title: "My Website"
+  type: inverse
   left:
     - text: "Home"
+      icon: fa-home
       href: index.html
     - text: "About"
+      icon: fa-info
       href: about.html
-    - text: "Learn more"
-      href: practice.html
-output:
-  html_document:
-    theme: flatly
-    toc: true
-    toc_float: true
-    toc_collapsed: true
-    toc_depth: 3
-    number_sections: true
+    - text: "More"
+      icon: fa-gear
+      menu:
+        - text: "Heading 1"
+        - text: "Page A"
+          href: page-a.html
+        - text: "Page B"
+          href: page-b.html
+        - text: "---------"
+        - text: "Heading 2"
+        - text: "Page C"
+          href: page-c.html
+        - text: "Page D"
+          href: page-d.html
+  right:
+    - icon: fa-question fa-lg
+      href: https://example.com
